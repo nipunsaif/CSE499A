@@ -1,11 +1,11 @@
 # CSE499A Senior Design I
 
-## Supervisor\
+## Supervisor
 Dr. Mohammad Rashedur Rahman[RRn] </br>
-Professor, ECE, North South University
+Professor, ECE, North South University </br>
 Email: rashedur.rahman@northsouth.edu
 
-## Group Members Information
+## Group Members
 
 | Name                   | Student ID   | Email                         |
 |------------------------|--------------|-------------------------------|
