@@ -10,7 +10,7 @@
 - Paper Link : https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w3/Rasouli_Are_They_Going_ICCV_2017_paper.pdf
 
 ## Drive Link
--https://drive.google.com/drive/folders/1VBpb_7aPsd3bwB892JuxA0eu5Vm7qza_?usp=sharing
+- https://drive.google.com/drive/folders/1VBpb_7aPsd3bwB892JuxA0eu5Vm7qza_?usp=sharing
 
 ## Supervisor
 Dr. Mohammad Rashedur Rahman[RRn] </br>
