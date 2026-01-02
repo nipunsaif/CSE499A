@@ -1,4 +1,4 @@
-# BanglaTesla-PeD: Pedestrian Intention and BanglaTesla Trajectory Prediction for Unstructured Traffic Environments
+# BanglaTesla-PeD: Pedestrian Intention and BanglaTesla Trajectory Prediction in Unstructured Traffic Environments
 
 ## Supervisor
 Dr. Mohammad Rashedur Rahman[RRn] </br>
