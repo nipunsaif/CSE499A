@@ -1,16 +1,4 @@
-# CSE499A Senior Design I
-
-## Important Links
-
-### Joint Attention in Autonomous Driving (JAAD) 
-- Official Website:  https://data.nvision2.eecs.yorku.ca/JAAD_dataset
-- GitHub Repository: https://github.com/ykotseruba/JAAD 
-- GitHub Repository: https://github.com/olly-styles/JAAD_dataset
-- GitHub Repository: https://github.com/ykotseruba/PedestrianActionBenchmark
-- Paper Link : https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w3/Rasouli_Are_They_Going_ICCV_2017_paper.pdf
-
-## Drive Link
-- https://drive.google.com/drive/folders/1VBpb_7aPsd3bwB892JuxA0eu5Vm7qza_?usp=sharing
+# BanglaTesla-PeD: Pedestrian Intention and BanglaTesla Trajectory Prediction for Unstructured Traffic Environments
 
 ## Supervisor
 Dr. Mohammad Rashedur Rahman[RRn] </br>
