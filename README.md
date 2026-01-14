@@ -1,9 +1,10 @@
 # BanglaTesla-PeD: Pedestrian Intention and BanglaTesla Trajectory Prediction in Unstructured Traffic Environments
 
 ## Supervisor
-Dr. Mohammad Rashedur Rahman[RRn] </br>
-Professor, ECE, North South University </br>
-Email: rashedur.rahman@northsouth.edu
+Dr. M. Rashedur Rahman, SMIEEE, Fellow (Bangladesh Computer Society), </br>
+Professor, Electrical and Computer Engineering Department,</br>
+North South University, Dhaka, Bangladesh </br>
+website:http://ece.northsouth.edu/people/rashedur-rahman/
 
 ## Group Members
 
