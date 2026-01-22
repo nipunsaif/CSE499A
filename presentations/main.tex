@@ -1,0 +1,723 @@
+\documentclass[
+	11pt, % Changed from 11pt to 8pt
+	%t, % Uncomment to vertically align all slide content to the top of the slide
+	%aspectratio=169, % Uncomment for 16:9 ratio
+]{beamer}
+\graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
+
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule for better rules in tables
+
+
+%----------------------------------------------------------------------------------------
+%	SELECT LAYOUT THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of default layout themes which change the colors and layouts of slides. Below is a list of all themes available, uncomment each in turn to see what they look like.
+
+% \usetheme{default}
+% \usetheme{AnnArbor}
+% \usetheme{Antibes}
+% \usetheme{Bergen}
+% \usetheme{Berkeley}
+% \usetheme{Berlin}
+% \usetheme{Boadilla}
+% \usetheme{CambridgeUS}
+% \usetheme{Copenhagen}
+% \usetheme{Darmstadt}
+% \usetheme{Dresden}
+% \usetheme{Frankfurt}
+%\usetheme{Goettingen}
+% \usetheme{Hannover}
+%\usetheme{Ilmenau}
+% \usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+% \usetheme{Montpellier}
+%\usetheme{PaloAlto}
+% \usetheme{Pittsburgh}
+%\usetheme{Rochester}
+% \usetheme{Singapore}
+% \usetheme{Szeged}
+% \usetheme{Warsaw}
+
+%----------------------------------------------------------------------------------------
+%	SELECT COLOR THEME
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with a number of color themes that can be applied to any layout theme to change its colors. Uncomment each of these in turn to see how they change the colors of your selected layout theme.
+
+% \usecolortheme{albatross}
+\usecolortheme{beaver}
+% \usecolortheme{beetle}
+% \usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+% \usecolortheme{lily}
+% \usecolortheme{monarca}
+%\usecolortheme{seagull}
+% \usecolortheme{seahorse}
+%\usecolortheme{spruce}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%----------------------------------------------------------------------------------------
+%	SELECT FONT THEME & FONTS
+%----------------------------------------------------------------------------------------
+
+% Beamer comes with several font themes to easily change the fonts used in various parts of the presentation. Review the comments beside each one to decide if you would like to use it. Note that additional options can be specified for several of these font themes, consult the beamer documentation for more information.
+
+% \usefonttheme{default} % Typeset using the default sans serif font
+\usefonttheme{serif} % Typeset using the default serif font (make sure a sans font isn't being set as the default font if you use this option!)
+%\usefonttheme{structurebold} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in bold
+%\usefonttheme{structureitalicserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in italic serif
+%\usefonttheme{structuresmallcapsserif} % Typeset important structure text (titles, headlines, footlines, sidebar, etc) in small caps serif
+
+
+%------------------------------------------------
+
+%\usepackage{mathptmx} % Use the Times font for serif text
+\usepackage{palatino} % Use the Palatino font for serif text
+
+%\usepackage{helvet} % Use the Helvetica font for sans serif text
+\usepackage[default]{opensans} % Use the Open Sans font for sans serif text
+%\usepackage[default]{FiraSans} % Use the Fira Sans font for sans serif text
+%\usepackage[default]{lato} % Use the Lato font for sans serif text
+
+%----------------------------------------------------------------------------------------
+%	SELECT INNER THEME
+%----------------------------------------------------------------------------------------
+
+% Inner themes change the styling of internal slide elements, for example: bullet points, blocks, bibliography entries, title pages, theorems, etc. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+%\useinnertheme{default}
+\useinnertheme{circles}
+%\useinnertheme{rectangles}
+%\useinnertheme{rounded}
+%\useinnertheme{inmargin}
+
+%----------------------------------------------------------------------------------------
+%	SELECT OUTER THEME
+%----------------------------------------------------------------------------------------
+
+% Outer themes change the overall layout of slides, such as: header and footer lines, sidebars and slide titles. Uncomment each theme in turn to see what changes it makes to your presentation.
+
+\useoutertheme{default}
+%\useoutertheme{infolines}
+%\useoutertheme{miniframes}
+%\useoutertheme{smoothbars}
+%\useoutertheme{sidebar}
+%\useoutertheme{split}
+%\useoutertheme{shadow}
+%\useoutertheme{tree}
+%\useoutertheme{smoothtree}
+
+%\setbeamertemplate{footline} % Uncomment this line to remove the footer line in all slides
+%\setbeamertemplate{footline}[page number] % Uncomment this line to replace the footer line in all slides with a simple slide count
+
+%\setbeamertemplate{navigation symbols}{} % Uncomment this line to remove the navigation symbols from the bottom of all slides
+
+\usefonttheme{professionalfonts}
+\renewcommand{\familydefault}{\rmdefault}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=simple, labelsep=period, name={Fig}}
+
+\usepackage{hyperref}
+\usepackage{booktabs} 
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title[BDD-PeD]{Pedestrian Intention and BanglaTesla Trajectory Prediction for Unstructured Traffic Environments in Bangladesh} % The short title in the optional parameter appears at the bottom of every slide, the full title in the main parameter is only on the title page
+
+\subtitle{} % Presentation subtitle, remove this command if a subtitle isn't required
+
+\author[Group 2, CSE499A.2]{Saif Mohammed \and Nazibul Islam Nabil \and Shadman Khan 
+\\ 2121913042 \and \hspace{1cm} 2222456642 \hspace{1cm} \and  2122061642 \\
+Humayra Rahman Nipa \\
+ 2121128042}\\ 
+% Presenter name(s), the optional parameter can contain a shortened version to appear on the bottom of every slide, while the main parameter will appear on the title slide
+
+\institute[NSU]{North South University \\ \smallskip \textit{Department of Electrical \& Computer Engineering}} % Your institution, the optional parameter can be used for the institution shorthand and will appear on the bottom of every slide after author names, while the required parameter is used on the title slide and can include your email address or additional information on separate lines
+
+\date[\today]{ \today} % Presentation date or conference/meeting name, the optional parameter can contain a shortened version to appear on the bottom of every slide, while the required parameter value is output to the title slide
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SLIDE
+%----------------------------------------------------------------------------------------
+
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+
+\begin{frame}{Evaluation of PIP Baselines on IDD-PeD Dataset}
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Model} & \multicolumn{2}{c}{\textbf{F1 Score}} & \multicolumn{2}{c}{\textbf{AUC}} \\
+\cline{2-5}
+ & \textbf{Papers} & \textbf{Ours} & \textbf{Papers} & \textbf{Ours} \\
+\hline
+Static      & 0.21 & 0.83 & 0.56 & 0.87 \\
+ConvLSTM    & 0.50 & 0.76 & 0.15 & 0.75 \\
+C3D         & 0.59 & 0.77 & 0.25 & 0.76 \\
+I3D         & 0.30 & 0.77 & 0.61 & 0.76 \\
+SF-GRU      & 0.59 & 0.72 & 0.26 & 0.70 \\
+SingleRNN   & 0.31 & 0.76 & 0.61 & 0.72 \\
+PCPA        & 0.71 & 0.72 & 0.33 & 0.69 \\
+MaskPCPA    & 0.25 & 0.73 & 0.61 & 0.68 \\
+\hline
+\end{tabular}
+\caption{Evaluation of PIP baselines on IDD-PeD dataset}
+\end{table}
+\end{frame}
+
+
+\begin{frame}{Evaluation of PTP Baselines on IDD-PeD Dataset}
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccccc}
+\hline
+\textbf{Model} & \multicolumn{2}{c}{\textbf{MSE}} & \multicolumn{2}{c}{\textbf{C-MSE}} & \multicolumn{2}{c}{\textbf{CF-MSE}} \\
+\cline{2-7}
+ & \textbf{Papers} & \textbf{Ours} & \textbf{Papers} & \textbf{Ours} & \textbf{Papers} & \textbf{Ours} \\
+\hline
+PIETraj & 2181 & 5269.31 & 1979 & 20297.43 & 8960 & 19779.86 \\
+MTN  & 1652 & 5477.66 & 1489 & 16728.20 & 6668 & 33456.56 \\
+BiTraP & 338  & 3220.46 & 200  & 13646.65 & 638  & 27293.29 \\
+SGNet & \textbf{310} & 8668.88 & \textbf{190} & 10836.63 & \textbf{531} & 6189.62 \\
+\hline
+\end{tabular}
+\caption{Evaluation of PTP baselines on IDD-PeD dataset}
+\end{table}
+\end{frame}
+
+
+%
+%\begin{frame}{Evaluation of PIP Baselines under Challenging Conditions}
+%\begin{table}[ht]
+%\centering
+%\scriptsize
+%\begin{tabular}{lcccccccccccccccc}
+%\hline
+%\textbf{Method} 
+%& \multicolumn{4}{c}{\textbf{Occlusion}} 
+%& \multicolumn{4}{c}{\textbf{Signalized}} 
+%& \multicolumn{4}{c}{\textbf{Illumination}} 
+%& \multicolumn{4}{c}{\textbf{Interaction}} \\
+%\cline{2-17}
+%
+%& \multicolumn{2}{c}{\textbf{Paper}} 
+%& \multicolumn{2}{c}{\textbf{Ours}}
+%& \multicolumn{2}{c}{\textbf{Paper}} 
+%& \multicolumn{2}{c}{\textbf{Ours}}
+%& \multicolumn{2}{c}{\textbf{Paper}} 
+%& \multicolumn{2}{c}{\textbf{Ours}}
+%& \multicolumn{2}{c}{\textbf{Paper}} 
+%& \multicolumn{2}{c}{\textbf{Ours}} \\
+%\cline{2-17}
+%
+%& w/o & w & w/o & w
+%& Yes & No & Yes & No
+%& Day & Night & Night & Night
+%& w/o & w & w/o & w \\
+%\hline
+%SingleRNN
+%& 0.63 & 0.61 & 0.52 & 0.50
+%& 0.70 & 0.62 & 0.52 & 0.54
+%& 0.63 & 0.58 & 0.58 & 0.52
+%& 0.65 & 0.58 & 0.52 & 0.54 \\
+%
+%I3D
+%& 0.60 & 0.57 & 0.92 & 0.50
+%& 0.48 & 0.64 & 0.92 & 0.94
+%& 0.65 & 0.51 & 0.92 & 0.80
+%& 0.64 & 0.60 & 0.80 & 0.88 \\
+%
+%SF-GRU
+%& 0.60 & 0.59 & 0.46 & 0.50
+%& 0.60 & 0.59 & 0.45 & 0.54
+%& 0.62 & 0.53 & 0.47 & 0.47
+%& 0.61 & 0.59 & 0.47 & 0.53 \\
+%
+%PCPA
+%& 0.72 & 0.71 & 0.50 & 0.50
+%& 0.66 & 0.72 & 0.50 & 0.50
+%& 0.74 & 0.65 & 0.52 & 0.50
+%& 0.73 & 0.69 & 0.50 & 0.49 \\
+%\hline
+%\end{tabular}
+%\caption{Evaluation of PIP baselines on occlusions, signalized types, illumination changes, and vehicle--pedestrian interactions in IDD-PeD dataset (AUC scores)}
+%\end{table}
+%\end{frame}
+
+
+
+
+
+%\begin{frame}{Evaluation of PIP Baselines under Challenging Conditions}
+%\begin{table}[ht]
+%\centering
+%\scriptsize
+%\begin{tabular}{lcccccccc}
+%\hline
+%\textbf{Method} 
+%& \multicolumn{2}{c}{\textbf{Occlusion}} 
+%& \multicolumn{2}{c}{\textbf{Signalized}} 
+%& \multicolumn{2}{c}{\textbf{Illumination}} 
+%& \multicolumn{2}{c}{\textbf{Interaction}} \\
+%\cline{2-9}
+%
+%& w/o & w
+%& Yes & No
+%& Day & Night
+%& w/o & w \\
+%\hline
+%SingleRNN
+%& 0.52 & 0.50
+%& 0.52 & 0.54
+%& 0.58 & 0.52
+%& 0.52 & 0.54 \\
+%
+%I3D
+%& \textbf{0.92} & 0.50
+%& \textbf{0.92} & \textbf{0.94}
+%& \textbf{0.92} & \textbf{0.80}
+%& \textbf{0.80} & \textbf{0.88} \\
+%
+%SF-GRU
+%& 0.46 & 0.50
+%& 0.45 & 0.54
+%& 0.47 & 0.47
+%& 0.47 & 0.53 \\
+%
+%PCPA
+%& 0.50 & 0.50
+%& 0.50 & 0.50
+%& 0.52 & 0.50
+%& 0.50 & 0.49 \\
+%\hline
+%\end{tabular}
+%\caption{Evaluation of PIP baselines under occlusions, signalized types, illumination changes, and vehicle--pedestrian interactions on IDD-PeD dataset (AUC scores, Ours)}
+%\end{table}
+%\end{frame}
+
+
+
+%\begin{frame}{Evaluation of PIP Baselines under Challenging Conditions}
+%\begin{table}[ht]
+%\centering
+%\scriptsize
+%\begin{tabular}{lcccccccc}
+%\hline
+%\textbf{Method} 
+%& \multicolumn{2}{c}{\textbf{Occlusion}} 
+%& \multicolumn{2}{c}{\textbf{Signalized}} 
+%& \multicolumn{2}{c}{\textbf{Illumination}} 
+%& \multicolumn{2}{c}{\textbf{Interaction}} \\
+%\cline{2-9}
+%
+%& w/o & w
+%& Yes & No
+%& Day & Night
+%& w/o & w \\
+%\hline
+%SingleRNN
+%& 0.52 & 0.50
+%& 0.52 & 0.54
+%& 0.58 & 0.52
+%& 0.52 & 0.54 \\
+%
+%I3D
+%& 0.92 & 0.50
+%& 0.92 & 0.94
+%& 0.92 & 0.80
+%& 0.80 & 0.88 \\
+%
+%SF-GRU
+%& 0.46 & 0.50
+%& 0.45 & 0.54
+%& 0.47 & 0.47
+%& 0.47 & 0.53 \\
+%
+%PCPA
+%& 0.50 & 0.50
+%& 0.50 & 0.50
+%& 0.52 & 0.50
+%& 0.50 & 0.49 \\
+%\hline
+%\end{tabular}
+%\caption{Evaluation of PIP baselines under occlusions, signalized types, illumination changes, and vehicle--pedestrian interactions on IDD-PeD dataset (AUC scores, Ours)}
+%\end{table}
+%\end{frame}
+
+
+\begin{frame}{Evaluation of PIP Baselines under Challenging Conditions}
+\begin{table}[ht]
+\centering
+\scriptsize
+\begin{tabular}{lcccccccc}
+\hline
+\textbf{Method} 
+& \multicolumn{2}{c}{\textbf{Occlusion}} 
+& \multicolumn{2}{c}{\textbf{Signalized}} 
+& \multicolumn{2}{c}{\textbf{Illumination}} 
+& \multicolumn{2}{c}{\textbf{Interaction}} \\
+\cline{2-9}
+
+& w/o & w
+& Yes & No
+& Day & Night
+& w/o & w \\
+\hline
+SingleRNN
+& 0.52 & 0.50
+& 0.52 & 0.54
+& 0.58 & 0.52
+& 0.52 & 0.54 \\
+
+I3D
+& \textbf{0.92} & 0.50
+& \textbf{0.92} & \textbf{0.94}
+& \textbf{0.92} & \textbf{0.80}
+& \textbf{0.80} & \textbf{0.88} \\
+
+SF-GRU
+& 0.46 & 0.50
+& 0.45 & 0.54
+& 0.47 & 0.47
+& 0.47 & 0.53 \\
+
+PCPA
+& 0.50 & 0.50
+& 0.50 & 0.50
+& 0.52 & 0.50
+& 0.50 & 0.49 \\
+\hline
+\end{tabular}
+\caption{Evaluation of PIP baselines under occlusions, signalized types, illumination changes, and vehicle--pedestrian interactions on IDD-PeD dataset (AUC scores, Ours)}
+\end{table}
+\end{frame}
+
+
+
+
+%\begin{frame}{Evaluation of PTP Baselines under Challenging Conditions}
+%\begin{table}[ht]
+%\centering
+%\scriptsize
+%\begin{tabular}{lcccccccccccccccc}
+%\hline
+%\textbf{Method}
+%& \multicolumn{4}{c}{\textbf{Occlusion}}
+%& \multicolumn{4}{c}{\textbf{Signalized}}
+%& \multicolumn{4}{c}{\textbf{Illumination}}
+%& \multicolumn{4}{c}{\textbf{Interaction}} \\
+%\cline{2-17}
+%
+%& \multicolumn{2}{c}{\textbf{Papers}}
+%& \multicolumn{2}{c}{\textbf{Ours}}
+%& \multicolumn{2}{c}{\textbf{Papers}}
+%& \multicolumn{2}{c}{\textbf{Ours}}
+%& \multicolumn{2}{c}{\textbf{Papers}}
+%& \multicolumn{2}{c}{\textbf{Ours}}
+%& \multicolumn{2}{c}{\textbf{Papers}}
+%& \multicolumn{2}{c}{\textbf{Ours}} \\
+%\cline{2-17}
+%
+%& w/o & w & w/o & w
+%& Yes & No & Yes & No
+%& Day & Night & Day & Night
+%& w/o & w & w/o & w \\
+%\hline
+%PIETraj
+%& 2055 & 2658 & 4630 & 5807
+%& 1434 & 2374 & 5270 & 4522
+%& 2190 & 2294 & 5274 & 4947
+%& 1561 & 4127 & 5135 & 5382 \\
+%
+%MTN
+%& 1565 & 1914 & 5208 & 6003
+%& 1215 & 1765 & 5545 & 5777
+%& 1633 & 1704 & 5946 & 4739
+%& 1328 & 2668 & 5589 & 5500 \\
+%
+%BiTraP
+%& 301 & 434 & 5480 & 8391
+%& 296 & 341 & 6876 & 6475
+%& 339 & 310 & 7630 & 5007
+%& 249 & 610 & 6823 & 6830 \\
+%
+%SGNet
+%& \textbf{289} & \textbf{411} & 4850 & 6380
+%& \textbf{281} & \textbf{329} & 5547 & 5623
+%& \textbf{330} & \textbf{301} & 6046 & 4454
+%& \textbf{227} & 581 & 5563 & 5520 \\
+%\hline
+%\end{tabular}
+%\caption{Evaluation of PTP baselines on occlusions, signalized types, illumination changes, and vehicle--pedestrian interactions in IDD-PeD dataset}
+%\end{table}
+%\end{frame}
+
+
+
+
+\begin{frame}{Evaluation of PTP Baselines under Challenging Conditions}
+\begin{table}[ht]
+\centering
+\scriptsize
+\begin{tabular}{lcccccccc}
+\hline
+\textbf{Method}
+& \multicolumn{2}{c}{\textbf{Occlusion}}
+& \multicolumn{2}{c}{\textbf{Signalized}}
+& \multicolumn{2}{c}{\textbf{Illumination}}
+& \multicolumn{2}{c}{\textbf{Interaction}} \\
+\cline{2-9}
+
+& w/o & w
+& Yes & No
+& Day & Night
+& w/o & w \\
+\hline
+PIETraj
+& 4630 & 5807
+& 5270 & 4522
+& 5274 & 4947
+& 5135 & 5382 \\
+
+MTN
+& 5208 & 6003
+& 5545 & 5777
+& 5946 & 4739
+& 5589 & 5500 \\
+
+BiTraP
+& 5480 & 8391
+& 6876 & 6475
+& 7630 & 5007
+& 6823 & 6830 \\
+
+SGNet
+& \textbf{4850} & \textbf{6380}
+& \textbf{5547} & \textbf{5623}
+& \textbf{6046} & \textbf{4454}
+& \textbf{5563} & \textbf{5520} \\
+\hline
+\end{tabular}
+\caption{Evaluation of PTP baselines under occlusions, signalized types, illumination changes, and vehicle--pedestrian interactions on IDD-PeD dataset (Ours)}
+\end{table}
+\end{frame}
+
+
+
+\begin{frame}{Evaluation on BanglaTesla Dataset}
+\begin{table}[ht]
+\centering
+\begin{tabular}{lccc}
+\hline
+\textbf{Method} & \textbf{MSE} & \textbf{C-MSE} & \textbf{CF-MSE} \\
+\hline
+MTN                & 23359.17 & 59450.51  & 128929.07 \\
+BiTraP             & 20849.88 & 50561.20  & 112180.95 \\
+PIETraj            & 19385.38 & 51930.15  & 113628.50 \\
+SGNet              & \textbf{13872.15} & \textbf{28258.27} & \textbf{63870.88} \\
+Transformer-Traj   & 43679.06 & 109290.25 & 221782.73 \\
+\hline
+\end{tabular}
+\end{table}
+\caption{Evaluation of PTP baselines on BanglaTesla dataset (our dataset)}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+    \frametitle{Pedestrian Intention Prediction (PIP)}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1 \textwidth,height=1\textheight,keepaspectratio]{pipeline.jpeg}
+        %Replace "Images/picture1.png" with your image path
+        \caption{PIP Baseline Pipeline}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{PIP Baseline Comparison}
+    \begin{table}[h]
+        \centering
+        \small  % <-- reduce table font size
+        \resizebox{\textwidth}{!}{%
+            \begin{tabular}{l|cc|cc|cc}
+                \hline
+                \multirow{Model} & \multicolumn{2}{c|}{JAAD } & \multicolumn{2}{c|}{PIE } & \multicolumn{2}{c}{IDD-PeD } \\ \cline{2-7}
+                 & AUC & $F_1$ & AUC & $F_1$ & AUC & $F_1$ \\
+                \hline
+                Static      & 0.75 & 0.55 & 0.60 & 0.41 & \textbf{0.8736} & \textbf{0.8335} \\
+                ConvLSTM    & 0.57 & 0.32 & 0.55 & 0.39 & 0.7560 & 0.7669 \\
+                C3D         & 0.81 & 0.65 & 0.67 & 0.52 & 0.7624 & 0.7776 \\
+                I3D         & 0.74 & 0.63 & 0.73 & 0.62 & 0.7609 & 0.7716 \\
+                SF-GRU      & 0.77 & 0.53 & 0.79 & 0.69 & 0.7003 & 0.7290 \\
+                SingleRNN   & 0.77 & 0.54 & 0.77 & 0.67 & 0.7209 & 0.7674 \\
+                PCPA        & 0.79 & 0.56 & 0.86 & 0.77 & 0.6904 & 0.7216 \\
+                MaskPCPA    & 0.82 & 0.63 & 0.86 & 0.80 & 0.6886 & 0.7278 \\
+                \hline
+            \end{tabular}%
+        }
+        \caption{II. Comparison of AUC and F1 scores across JAAD, PIE, and IDD-PeD datasets.}
+    \end{table}
+\end{frame}
+
+
+
+
+\begin{frame}
+    \frametitle{Pedistarian Trajectory Prediction Pipeline}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1 \textwidth,height=1\textheight,keepaspectratio]{PTP-baseline.jpeg}
+        %Replace "Images/picture1.png" with your image path
+        \caption{PTP Baseline Pipeline}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{PTP Baseline Comparision}
+    \begin{table}[h]
+        \centering
+       
+        % We resize this to ~42% width because it has ~40% of the columns of Table 2
+            \begin{tabular}{l|c|c|c}
+                \toprule
+                \textbf{Method} & \textbf{MSE} & \textbf{C-MSE} & \textbf{CF-MSE} \\
+                \midrule
+                \textbf{PIETraj} &\textbf{ 5269.31} & \textbf{20297.43} & \textbf{19779.86 }\\
+                MTN     & 5477.66 & 16728.28 & 33456.56 \\
+                BiTraP  & 6191.42 & 19779.86 & 39559.71 \\
+                SGNet   & 13557.26 & 42422.72 & 84845.43 \\
+                \bottomrule
+            \end{tabular}%
+            \caption{III: Evaluation of PTP baselines on IDD-PED
+datasets}
+    \end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{PIP on Scenario Pipeline}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1 \textwidth,height=1\textheight,keepaspectratio]{PIP-4.jpeg}
+        %Replace "Images/picture1.png" with your image path
+        \caption{PIP Scenario Baseline Pipeline}
+    \end{figure}
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{PIP baselines on Occlusions, Signalized,
+Illumination, and Interactions}
+    \begin{table}[h]
+        \centering
+        
+            \begin{tabular}{l|cc|cc|cc|cc}
+                \toprule
+                \multirow{\textbf{Method}} & \multicolumn{2}{c|}{\textbf{Occlusion}} & \multicolumn{2}{c|}{\textbf{Signalized}} & \multicolumn{2}{c|}{\textbf{Illumination}} & \multicolumn{2}{c}{\textbf{Interaction}} \\
+                \cline{2-9}
+                 & w/o & w & Yes & No & Day & Night & w/o & w \\
+                \midrule
+                SingleRNN & 0.52 & 0.5 & 0.52 & 0.54 & 0.5 & 0.58 & 0.52 & 0.54 \\
+                \textbf{I3D} & \textbf{0.92} & \textbf{0.5} & \textbf{0.92} & \textbf{0.94} & \textbf{0.92} & \textbf{0.92} & \textbf{0.8} & \textbf{0.88} \\
+                SF-GRU & 0.46 & 0.5 & 0.45 & 0.54 & 0.42 & 0.47 & 0.47 & 0.53 \\
+                PCPA & 0.5 & 0.5 & 0.5 & 0.5 & 0.51 & 0.52 & 0.5 & 0.49 \\
+                \bottomrule
+            \end{tabular}%
+        \caption{Evaluation of PIP baselines on Occlusions, Signalized
+Types, Illumination Changes, and Vehicle-Pedestrian Interactions
+in IDD-PED dataset.}
+    \end{table}
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{PTP Scenario Pipeline}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1 \textwidth,height=1\textheight,keepaspectratio]{PTP-4 Pipeline.jpeg}
+        %Replace "Images/picture1.png" with your image path
+        \caption{PTP Scenario Pipeline}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{PTP baselines on Occlusions, Signalized,
+Illumination, and Interaction}
+    \begin{table}[h]
+        \centering
+            \begin{tabular}{l|cc|cc|cc|cc}
+                \toprule
+                \multirow{\textbf{Method}} & \multicolumn{2}{c|}{\textbf{Occlusion}} & \multicolumn{2}{c|}{\textbf{Signalized}} & \multicolumn{2}{c|}{\textbf{Illumination}} & \multicolumn{2}{c}{\textbf{Interaction}} \\
+                \cline{2-9}
+                 & w/o & w & Yes & No & Day & Night & w/o & w \\
+                \midrule
+                PIETraj  & \textbf{4630} & \textbf{5807} & \textbf{5270} & \textbf{4522} & \textbf{5274} & 4947 & \textbf{5135} & 5382 \\
+                MTN      & 5208 & 6003 & 5545 & 5777 & 5946 & \textbf{4739} & 5589 & 5500 \\
+                BiTraP   & 5480 & 8391 & 6876 & 6475 & 7630 & 5007 & 6823 & 6830 \\
+                SGNet    & 4850 & 6380 & 5547 & 5623 & 6046 & \textbf{4454} & 5563 & \textbf{5520} \\
+                \bottomrule
+            \end{tabular}%
+        \caption{Evaluation of PTP baselines on Occlusions, Signalized
+Types, Illumination Changes, and Vehicle-Pedestrian Interactions
+in IDD-PED dataset.}
+    \end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{BanglaTesla Trajectory Prediction Pipeline}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=1 \textwidth,height=1\textheight,keepaspectratio]{BanglaTesla-5.jpeg}
+        %Replace "Images/picture1.png" with your image path
+        \caption{BTP Baseline Pipeline}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{BanglaTesla Trajectory Prediction Baseline Comparison}
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{l|c|c|c}
+            \toprule
+            \textbf{Method} & \textbf{MSE} & \textbf{C-MSE} & \textbf{CF-MSE} \\
+            \midrule
+            MTN               & 23359.17 & 59450.51 & 128929.07 \\
+            BiTraP            & 20849.88 & 50561.20 & 112180.95 \\
+            PIETraj           & 19385.38 & 51930.15 & 113628.50 \\
+            SGNet             & \textbf{13872.15} & \textbf{28258.27} & \textbf{63870.88} \\
+            Transformer-Traj  & 43679.06 & 109290.25 & 221782.73 \\
+            \bottomrule
+        \end{tabular}
+    \caption{Evaluation of trajectory prediction models using MSE, C-MSE, and CF-MSE.}
+    \end{table}
+\end{frame}
+
+\end{document} 
