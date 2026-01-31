@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<annotations>
+  <meta>
+    <task>
+      <size>1800</size>
+      <mode>interpolation</mode>
+      <overlap>0</overlap>
+    </task>
+    <source>
+      <original_size>2592x1944</original_size>
+    </source>
+  </meta>
+  <track id="78" label="car">
+    <box frame="1590" outside="0" occluded="0" keyframe="1" xtl="1484.96" ytl="1185.04" xbr="1800.92" ybr="1348.12"/>
+    <box frame="1592" outside="0" occluded="0" keyframe="1" xtl="1493.30" ytl="1184.16" xbr="1777.22" ybr="1330.67"/>
+    <box frame="1593" outside="0" occluded="0" keyframe="1" xtl="1482.58" ytl="1183.83" xbr="1766.33" ybr="1330.15"/>
+    <box frame="1596" outside="0" occluded="0" keyframe="1" xtl="1434.49" ytl="1182.39" xbr="1725.72" ybr="1333.03"/>
+    <box frame="1599" outside="0" occluded="0" keyframe="1" xtl="1396.52" ytl="1181.89" xbr="1682.03" ybr="1330.34"/>
+    <box frame="1600" outside="0" occluded="0" keyframe="1" xtl="1392.85" ytl="1182.27" xbr="1675.65" ybr="1329.94"/>
+    <box frame="1601" outside="0" occluded="0" keyframe="1" xtl="1390.92" ytl="1181.07" xbr="1669.88" ybr="1327.42"/>
+    <box frame="1602" outside="0" occluded="0" keyframe="1" xtl="1376.67" ytl="1178.33" xbr="1663.52" ybr="1329.73"/>
+    <box frame="1603" outside="0" occluded="0" keyframe="1" xtl="1370.54" ytl="1178.95" xbr="1651.44" ybr="1328.47"/>
+    <box frame="1604" outside="0" occluded="0" keyframe="1" xtl="1372.45" ytl="1180.80" xbr="1641.00" ybr="1325.64"/>
+    <box frame="1605" outside="0" occluded="0" keyframe="1" xtl="1374.65" ytl="1181.59" xbr="1636.49" ybr="1324.52"/>
+    <box frame="1606" outside="0" occluded="0" keyframe="1" xtl="1370.98" ytl="1182.14" xbr="1626.85" ybr="1324.60"/>
+    <box frame="1607" outside="0" occluded="0" keyframe="1" xtl="1361.00" ytl="1181.98" xbr="1619.02" ybr="1328.16"/>
+    <box frame="1608" outside="0" occluded="0" keyframe="1" xtl="1358.93" ytl="1181.97" xbr="1615.12" ybr="1329.46"/>
+    <box frame="1609" outside="0" occluded="0" keyframe="1" xtl="1353.92" ytl="1179.27" xbr="1606.10" ybr="1328.26"/>
+    <box frame="1610" outside="0" occluded="0" keyframe="1" xtl="1349.59" ytl="1177.67" xbr="1595.11" ybr="1326.38"/>
+  </track>
+  <track id="80" label="person">
+    <box frame="1764" outside="0" occluded="0" keyframe="1" xtl="1546.24" ytl="1170.31" xbr="1694.27" ybr="1468.60"/>
+  </track>
+</annotations>

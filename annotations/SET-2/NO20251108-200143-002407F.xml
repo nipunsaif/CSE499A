@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<annotations>
+  <meta>
+    <task>
+      <id>0</id>
+      <name>NO20251108-200143-002407F.MP4</name>
+      <size>349</size>
+      <mode>interpolation</mode>
+      <overlap>0</overlap>
+    </task>
+    <source>
+      <original_size>2592x1944</original_size>
+    </source>
+  </meta>
+</annotations>

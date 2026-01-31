@@ -1,0 +1,386 @@
+<?xml version="1.0" ?>
+<annotations>
+  <meta>
+    <task>
+      <id>0</id>
+      <name>NO20251108-131648-002346F.MP4</name>
+      <size>365</size>
+      <mode>interpolation</mode>
+      <overlap>0</overlap>
+    </task>
+    <source>
+      <original_size>2592x1944</original_size>
+    </source>
+  </meta>
+  <track id="14614" label="vehicle">
+    <box frame="42" outside="0" occluded="0" keyframe="1" z_order="0" xtl="980.86" ytl="1287.05" xbr="1096.00" ybr="1404.53">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="43" outside="0" occluded="0" keyframe="1" z_order="0" xtl="981.72" ytl="1288.15" xbr="1096.39" ybr="1404.44">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="44" outside="0" occluded="0" keyframe="1" z_order="0" xtl="981.79" ytl="1288.22" xbr="1096.52" ybr="1404.42">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="45" outside="0" occluded="0" keyframe="1" z_order="0" xtl="981.62" ytl="1288.30" xbr="1096.52" ybr="1404.35">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="46" outside="0" occluded="0" keyframe="1" z_order="0" xtl="981.76" ytl="1288.30" xbr="1096.17" ybr="1404.32">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="47" outside="0" occluded="0" keyframe="1" z_order="0" xtl="982.48" ytl="1288.28" xbr="1096.16" ybr="1403.98">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="48" outside="0" occluded="0" keyframe="1" z_order="0" xtl="982.64" ytl="1288.08" xbr="1096.64" ybr="1403.73">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="49" outside="0" occluded="0" keyframe="1" z_order="0" xtl="982.73" ytl="1288.37" xbr="1096.97" ybr="1403.67">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="50" outside="0" occluded="0" keyframe="1" z_order="0" xtl="982.85" ytl="1288.93" xbr="1097.09" ybr="1403.65">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="51" outside="0" occluded="0" keyframe="1" z_order="0" xtl="982.37" ytl="1288.89" xbr="1096.98" ybr="1403.78">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="52" outside="0" occluded="0" keyframe="1" z_order="0" xtl="981.99" ytl="1288.62" xbr="1097.52" ybr="1403.82">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="53" outside="0" occluded="0" keyframe="1" z_order="0" xtl="981.71" ytl="1288.40" xbr="1097.13" ybr="1403.76">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="54" outside="0" occluded="0" keyframe="1" z_order="0" xtl="982.42" ytl="1288.37" xbr="1096.84" ybr="1403.62">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="55" outside="0" occluded="0" keyframe="1" z_order="0" xtl="982.49" ytl="1287.68" xbr="1096.01" ybr="1403.53">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="56" outside="0" occluded="0" keyframe="1" z_order="0" xtl="982.71" ytl="1287.66" xbr="1095.12" ybr="1403.33">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="57" outside="0" occluded="0" keyframe="1" z_order="0" xtl="986.23" ytl="1288.78" xbr="1094.12" ybr="1402.28">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="58" outside="0" occluded="0" keyframe="1" z_order="0" xtl="987.84" ytl="1288.78" xbr="1093.98" ybr="1401.79">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="59" outside="0" occluded="0" keyframe="1" z_order="0" xtl="988.86" ytl="1288.63" xbr="1094.61" ybr="1401.75">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="60" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.16" ytl="1288.13" xbr="1094.57" ybr="1401.82">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="61" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.31" ytl="1288.12" xbr="1094.40" ybr="1401.86">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="62" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.41" ytl="1288.40" xbr="1094.11" ybr="1401.79">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="63" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.73" ytl="1288.14" xbr="1094.79" ybr="1401.77">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="64" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.77" ytl="1288.38" xbr="1094.98" ybr="1401.62">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="65" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.32" ytl="1288.23" xbr="1094.80" ybr="1401.63">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="66" outside="0" occluded="0" keyframe="1" z_order="0" xtl="988.83" ytl="1287.80" xbr="1094.10" ybr="1401.85">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="67" outside="0" occluded="0" keyframe="1" z_order="0" xtl="988.16" ytl="1287.26" xbr="1093.66" ybr="1401.96">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="68" outside="0" occluded="0" keyframe="1" z_order="0" xtl="987.97" ytl="1287.32" xbr="1093.38" ybr="1401.88">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+  </track>
+  <track id="14615" label="vehicle">
+    <box frame="203" outside="0" occluded="0" keyframe="1" z_order="0" xtl="999.10" ytl="1291.77" xbr="1117.01" ybr="1405.77">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="204" outside="0" occluded="0" keyframe="1" z_order="0" xtl="999.12" ytl="1291.91" xbr="1116.30" ybr="1405.77">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="205" outside="0" occluded="0" keyframe="1" z_order="0" xtl="999.99" ytl="1292.32" xbr="1115.34" ybr="1405.76">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="206" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1000.10" ytl="1292.23" xbr="1114.23" ybr="1405.78">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="207" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1000.45" ytl="1291.89" xbr="1114.12" ybr="1406.11">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="208" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1001.32" ytl="1291.35" xbr="1114.64" ybr="1406.47">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="209" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1001.47" ytl="1290.77" xbr="1114.92" ybr="1406.88">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="210" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1003.67" ytl="1291.19" xbr="1113.77" ybr="1406.84">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="211" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1004.29" ytl="1290.94" xbr="1112.33" ybr="1407.02">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="212" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1005.74" ytl="1290.62" xbr="1111.24" ybr="1406.92">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="215" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1005.38" ytl="1289.85" xbr="1107.64" ybr="1408.14">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+  </track>
+  <track id="14616" label="vehicle">
+    <box frame="265" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1157.81" ytl="1287.83" xbr="1232.75" ybr="1384.39">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="266" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1157.41" ytl="1287.63" xbr="1232.31" ybr="1384.91">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="267" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1157.06" ytl="1287.32" xbr="1231.97" ybr="1385.27">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="268" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1157.02" ytl="1287.37" xbr="1231.40" ybr="1385.23">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="269" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1156.75" ytl="1287.55" xbr="1231.06" ybr="1385.28">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="270" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1157.57" ytl="1288.70" xbr="1231.48" ybr="1384.74">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="271" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1157.75" ytl="1289.04" xbr="1231.66" ybr="1384.73">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="272" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1157.08" ytl="1289.13" xbr="1231.77" ybr="1384.99">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="273" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1156.74" ytl="1289.41" xbr="1231.73" ybr="1385.11">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="274" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1155.85" ytl="1289.72" xbr="1231.41" ybr="1385.11">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="275" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1155.88" ytl="1290.70" xbr="1230.95" ybr="1384.74">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="277" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1155.30" ytl="1290.91" xbr="1230.72" ybr="1384.75">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="278" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1154.48" ytl="1289.04" xbr="1230.59" ybr="1384.80">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="279" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1154.52" ytl="1289.80" xbr="1230.60" ybr="1384.88">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="280" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1153.89" ytl="1288.23" xbr="1230.15" ybr="1384.74">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="281" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1153.47" ytl="1287.63" xbr="1229.95" ybr="1385.36">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="282" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1152.89" ytl="1287.69" xbr="1229.90" ybr="1385.83">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="283" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1153.00" ytl="1289.33" xbr="1230.18" ybr="1386.74">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="284" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1152.82" ytl="1289.84" xbr="1230.46" ybr="1387.32">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="285" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1152.28" ytl="1289.93" xbr="1230.33" ybr="1388.11">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="286" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1151.68" ytl="1289.67" xbr="1230.05" ybr="1388.50">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="287" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1151.34" ytl="1289.51" xbr="1229.62" ybr="1388.38">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="291" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1151.72" ytl="1290.04" xbr="1228.38" ybr="1386.75">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="293" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1151.98" ytl="1289.64" xbr="1228.24" ybr="1386.31">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="294" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1151.68" ytl="1289.48" xbr="1228.08" ybr="1386.42">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="295" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1151.01" ytl="1289.42" xbr="1227.98" ybr="1386.58">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="296" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1150.15" ytl="1289.24" xbr="1228.40" ybr="1386.97">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="297" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1148.29" ytl="1288.96" xbr="1228.39" ybr="1387.37">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="298" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1146.75" ytl="1288.70" xbr="1228.23" ybr="1387.66">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="299" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1145.35" ytl="1288.89" xbr="1227.95" ybr="1388.34">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="300" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1144.23" ytl="1289.52" xbr="1226.14" ybr="1389.26">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="301" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.47" ytl="1290.04" xbr="1225.11" ybr="1389.65">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="302" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.39" ytl="1290.59" xbr="1224.39" ybr="1390.08">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="303" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.40" ytl="1290.15" xbr="1223.35" ybr="1390.40">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="304" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.34" ytl="1290.32" xbr="1222.31" ybr="1390.11">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="305" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.59" ytl="1290.07" xbr="1221.70" ybr="1389.96">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="306" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.86" ytl="1290.11" xbr="1221.43" ybr="1389.78">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="307" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.97" ytl="1290.40" xbr="1220.89" ybr="1389.92">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="308" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.91" ytl="1290.58" xbr="1221.02" ybr="1390.16">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="309" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1143.06" ytl="1291.04" xbr="1221.95" ybr="1390.11">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="310" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1142.37" ytl="1291.04" xbr="1222.52" ybr="1390.74">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="319" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1140.56" ytl="1290.64" xbr="1221.63" ybr="1391.76">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="320" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1140.40" ytl="1291.24" xbr="1221.42" ybr="1392.01">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="323" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1137.66" ytl="1293.94" xbr="1215.31" ybr="1392.84">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="324" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1136.78" ytl="1294.67" xbr="1213.58" ybr="1393.05">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="325" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1136.21" ytl="1295.29" xbr="1213.68" ybr="1393.61">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="327" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1136.62" ytl="1292.39" xbr="1217.77" ybr="1393.21">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="328" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1137.10" ytl="1292.26" xbr="1219.00" ybr="1393.04">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="329" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1137.46" ytl="1292.14" xbr="1219.68" ybr="1392.67">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="332" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1137.58" ytl="1290.00" xbr="1220.85" ybr="1393.26">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="333" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1136.02" ytl="1289.21" xbr="1221.13" ybr="1394.53">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="349" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1125.95" ytl="1292.35" xbr="1205.64" ybr="1405.62">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="350" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1125.66" ytl="1292.87" xbr="1204.54" ybr="1406.79">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="351" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1125.11" ytl="1294.24" xbr="1203.06" ybr="1408.48">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="352" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1124.44" ytl="1295.07" xbr="1202.48" ybr="1409.59">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="353" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1124.04" ytl="1295.00" xbr="1201.66" ybr="1409.82">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="354" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1123.79" ytl="1294.08" xbr="1201.33" ybr="1408.81">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="355" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1123.73" ytl="1291.50" xbr="1203.55" ybr="1409.01">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="356" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1123.72" ytl="1289.91" xbr="1204.62" ybr="1409.80">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="357" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1122.96" ytl="1289.32" xbr="1203.80" ybr="1410.65">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="358" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1120.82" ytl="1287.94" xbr="1203.06" ybr="1412.40">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="359" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1118.70" ytl="1287.55" xbr="1203.33" ybr="1413.99">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="360" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1115.11" ytl="1286.94" xbr="1202.93" ybr="1415.79">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="361" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1111.00" ytl="1285.39" xbr="1205.90" ybr="1415.56">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="362" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1108.43" ytl="1283.95" xbr="1207.00" ybr="1414.99">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="363" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1105.88" ytl="1283.15" xbr="1205.58" ybr="1415.54">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+    <box frame="364" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1104.15" ytl="1282.17" xbr="1205.66" ybr="1415.74">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+  </track>
+  <track id="14617" label="vehicle">
+    <box frame="284" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.74" ytl="1294.50" xbr="1099.13" ybr="1401.45">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="285" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.63" ytl="1294.91" xbr="1098.69" ybr="1401.65">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="286" outside="0" occluded="0" keyframe="1" z_order="0" xtl="989.28" ytl="1294.90" xbr="1099.00" ybr="1401.69">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="287" outside="0" occluded="0" keyframe="1" z_order="0" xtl="990.28" ytl="1295.27" xbr="1099.22" ybr="1401.61">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="288" outside="0" occluded="0" keyframe="1" z_order="0" xtl="990.46" ytl="1294.78" xbr="1099.69" ybr="1401.90">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="289" outside="0" occluded="0" keyframe="1" z_order="0" xtl="990.49" ytl="1294.40" xbr="1099.66" ybr="1402.00">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="290" outside="0" occluded="0" keyframe="1" z_order="0" xtl="990.58" ytl="1294.23" xbr="1099.15" ybr="1402.15">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="291" outside="0" occluded="0" keyframe="1" z_order="0" xtl="990.45" ytl="1293.49" xbr="1098.72" ybr="1402.28">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="292" outside="0" occluded="0" keyframe="1" z_order="0" xtl="990.52" ytl="1292.82" xbr="1098.47" ybr="1402.81">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="293" outside="0" occluded="0" keyframe="1" z_order="0" xtl="990.78" ytl="1292.92" xbr="1097.51" ybr="1402.98">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="294" outside="0" occluded="0" keyframe="1" z_order="0" xtl="991.32" ytl="1292.95" xbr="1096.42" ybr="1403.40">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+  </track>
+  <track id="14618" label="vehicle">
+    <box frame="325" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1138.11" ytl="1291.42" xbr="1219.27" ybr="1393.16">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+  </track>
+  <track id="14619" label="vehicle">
+    <box frame="361" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1110.00" ytl="1285.14" xbr="1203.41" ybr="1415.75">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+  </track>
+  <track id="14620" label="vehicle">
+    <box frame="364" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1104.82" ytl="1283.41" xbr="1201.04" ybr="1416.95">
+      <attribute name="V_Type">bike</attribute>
+    </box>
+  </track>
+</annotations>

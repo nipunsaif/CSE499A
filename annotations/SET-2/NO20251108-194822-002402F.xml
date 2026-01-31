@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<annotations>
+  <meta>
+    <task>
+      <id>0</id>
+      <name>NO20251108-194822-002402F.MP4</name>
+      <size>12</size>
+      <mode>interpolation</mode>
+      <overlap>0</overlap>
+    </task>
+    <source>
+      <original_size>2592x1944</original_size>
+    </source>
+  </meta>
+  <track id="16324" label="vehicle">
+    <box frame="1" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1572.86" ytl="1235.32" xbr="1878.22" ybr="1440.81">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="2" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1569.99" ytl="1239.08" xbr="1870.94" ybr="1441.52">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="3" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1566.15" ytl="1242.11" xbr="1862.98" ybr="1441.66">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="4" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1558.36" ytl="1236.37" xbr="1857.87" ybr="1437.49">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="5" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1544.79" ytl="1237.58" xbr="1841.03" ybr="1436.41">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="6" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1534.92" ytl="1238.08" xbr="1828.14" ybr="1434.88">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="7" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1531.08" ytl="1237.33" xbr="1824.62" ybr="1434.42">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+  </track>
+</annotations>
