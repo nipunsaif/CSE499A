@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<annotations>
+  <meta>
+    <task>
+      <size>1800</size>
+      <mode>interpolation</mode>
+      <overlap>0</overlap>
+    </task>
+    <source>
+      <original_size>2592x1944</original_size>
+    </source>
+  </meta>
+  <track id="1087" label="person">
+    <box frame="692" outside="0" occluded="0" keyframe="1" xtl="1334.05" ytl="1178.03" xbr="1500.99" ybr="1512.05"/>
+    <box frame="693" outside="0" occluded="0" keyframe="1" xtl="1331.74" ytl="1177.75" xbr="1500.76" ybr="1515.87"/>
+    <box frame="694" outside="0" occluded="0" keyframe="1" xtl="1328.86" ytl="1179.63" xbr="1498.43" ybr="1518.80"/>
+    <box frame="723" outside="0" occluded="0" keyframe="1" xtl="1254.77" ytl="1179.01" xbr="1436.32" ybr="1557.41"/>
+    <box frame="724" outside="0" occluded="0" keyframe="1" xtl="1254.29" ytl="1177.80" xbr="1430.55" ybr="1556.80"/>
+    <box frame="725" outside="0" occluded="0" keyframe="1" xtl="1253.19" ytl="1176.02" xbr="1427.64" ybr="1557.77"/>
+  </track>
+</annotations>

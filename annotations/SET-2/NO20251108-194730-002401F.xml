@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<annotations>
+  <meta>
+    <task>
+      <id>0</id>
+      <name>NO20251108-194730-002401F.MP4</name>
+      <size>145</size>
+      <mode>interpolation</mode>
+      <overlap>0</overlap>
+    </task>
+    <source>
+      <original_size>2592x1944</original_size>
+    </source>
+  </meta>
+  <track id="16318" label="vehicle">
+    <box frame="31" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1564.58" ytl="1201.08" xbr="1810.18" ybr="1460.19">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="32" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1556.41" ytl="1199.37" xbr="1802.52" ybr="1459.16">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="33" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1551.11" ytl="1203.53" xbr="1793.32" ybr="1459.10">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="34" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1548.65" ytl="1205.32" xbr="1789.47" ybr="1459.23">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="38" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1512.57" ytl="1212.43" xbr="1740.33" ybr="1451.24">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="39" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1503.80" ytl="1211.92" xbr="1737.36" ybr="1455.78">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+  </track>
+  <track id="16319" label="vehicle">
+    <box frame="34" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2049.99" ytl="1042.80" xbr="2590.60" ybr="1843.32">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="35" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2007.99" ytl="1003.09" xbr="2575.33" ybr="1841.96">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+  </track>
+  <track id="16320" label="vehicle">
+    <box frame="53" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1686.23" ytl="1121.62" xbr="2127.04" ybr="1578.19">
+      <attribute name="V_Type">cng</attribute>
+    </box>
+  </track>
+  <track id="16321" label="vehicle">
+    <box frame="74" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1458.10" ytl="1180.10" xbr="1804.47" ybr="1496.97">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="75" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1459.59" ytl="1178.77" xbr="1804.06" ybr="1494.49">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="76" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1460.35" ytl="1181.85" xbr="1797.14" ybr="1491.14">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="78" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1454.29" ytl="1180.69" xbr="1781.97" ybr="1482.66">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="79" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1449.85" ytl="1182.16" xbr="1776.10" ybr="1483.63">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="80" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1446.76" ytl="1181.87" xbr="1771.98" ybr="1484.48">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+  </track>
+  <track id="16322" label="vehicle">
+    <box frame="121" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2062.17" ytl="953.29" xbr="2579.61" ybr="1837.85">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="122" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2062.94" ytl="964.97" xbr="2576.54" ybr="1841.89">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="123" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2046.97" ytl="916.37" xbr="2592.00" ybr="1857.17">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="124" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2024.40" ytl="897.87" xbr="2587.84" ybr="1859.67">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="133" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2216.92" ytl="1087.74" xbr="2503.32" ybr="1536.98">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+    <box frame="134" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2209.39" ytl="1102.43" xbr="2501.82" ybr="1527.43">
+      <attribute name="V_Type">bangla-tesla</attribute>
+    </box>
+  </track>
+  <track id="16323" label="vehicle">
+    <box frame="139" outside="0" occluded="0" keyframe="1" z_order="0" xtl="1877.43" ytl="1097.07" xbr="2592.00" ybr="1857.10">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="140" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2010.07" ytl="1105.79" xbr="2499.19" ybr="1605.43">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="141" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2042.46" ytl="1104.52" xbr="2461.54" ybr="1525.07">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="142" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2048.03" ytl="1116.95" xbr="2452.63" ybr="1512.97">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="143" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2043.05" ytl="1127.55" xbr="2448.18" ybr="1512.16">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+    <box frame="144" outside="0" occluded="0" keyframe="1" z_order="0" xtl="2033.51" ytl="1128.11" xbr="2454.50" ybr="1515.31">
+      <attribute name="V_Type">private-car</attribute>
+    </box>
+  </track>
+</annotations>
