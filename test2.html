@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="w3.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Welcome to the Simulated Paradigm">
+    <title>DhakaDriveX</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        /* =========================================
+           Global & Reset
+           ========================================= */
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        /* =========================================
+           Top Navbar
+           ========================================= */
+        .Navbar_navbar__AHaSr {
+            position: fixed;
+            top: 0; 
+            left: 0; 
+            width: 100%;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            padding: 15px 40px; 
+            z-index: 2000; 
+            box-sizing: border-box;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+        }
+        
+        .Navbar_navLinks__pxUEg { 
+            display: flex; 
+            gap: 40px; 
+        }
+
+        .Navbar_link__zGYRb { 
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 1rem; 
+            letter-spacing: 2px; 
+            transition: color 0.3s; 
+            cursor: pointer;
+        }
+        .Navbar_link__zGYRb:hover { color: #00d2ff; }
+
+        /* =========================================
+           UFO Styles
+           ========================================= */
+        .ufo-container {
+            position: absolute;
+            z-index: 2; 
+            bottom: 45vh;
+            width: 100px;
+            left: -150px; 
+            animation: ufoFlyRight 15s linear infinite;
+            filter: drop-shadow(0 0 15px rgba(0, 210, 255, 0.6));
+        }
+
+        .ufo-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes ufoFlyRight {
+            0% { left: -150px; }
+            100% { left: 110vw; }
+        }
+
+        /* =========================================
+           Main Parallax Environment
+           ========================================= */
+        .Home_pageWrapper__S6yrl {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .BackgroundAnimation_scrollingWrapper__l27RC {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        }
+
+        @keyframes scrollMidBack {
+            from { background-position-x: 0px; }
+            to { background-position-x: -200vh; }
+        }
+
+        @keyframes scrollMid {
+            from { background-position-x: 0px; }
+            to { background-position-x: -200vh; }
+        }
+
+        @keyframes scrollFront {
+            from { background-position-x: 0px; }
+            to { background-position-x: -150vh; }
+        }
+
+        .BackgroundAnimation_buildingsBack__hP6-g { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('back.jpeg');
+            background-size: cover;
+            background-position: center;
+            z-index: 1; 
+        }
+
+        .BackgroundAnimation_buildingsMidBack {
+            position: absolute; top: 0; left: 0; width: 180%; height: 100%;
+            background-image: url('mid.png');
+            background-size: 250vh 80%;
+            background-repeat: repeat-x;
+            background-position-y: bottom;
+            z-index: 2;
+            animation: scrollMidBack 90s linear infinite; 
+            filter: blur(1.5px);
+        }
+
+        .BackgroundAnimation_buildingsFront__PBtGL { 
+            position: absolute; bottom: 12vh; left: 0; width: 150%; height: 60vh;
+            background-image: url('front.png');
+            background-size: 200vh 100%;
+            background-repeat: repeat-x;
+            background-position-y: bottom;
+            z-index: 3;
+            animation: scrollMid 10s linear infinite;
+        }
+
+        .vibrant-street {
+            position: absolute;
+            bottom: 0; left: 0; width: 100%; height: 12vh;
+            background: linear-gradient(
+                to bottom,
+                rgba(255, 182, 193, 0.3) 70%, 
+                rgba(255, 192, 203, 0.3) 75%,
+                rgba(255, 209, 220, 0.3) 100%
+            );
+            z-index: 4; 
+            box-shadow: inset 0 8px 10px rgba(255, 255, 255, 0.4), inset 0 -5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden; 
+        }
+
+        .reflection-layer {
+            position: absolute;
+            bottom: 12vh; 
+            left: 0;
+            width: 100%;
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        .reflection-buildingsMidBack, .reflection-buildingsFront {
+            position: absolute;
+            bottom: -12vh;
+            left: 0;
+            width: 100%;
+            transform: scaleY(-1);
+            transform-origin: top;
+            filter: blur(5px) opacity(1); 
+        }
+
+        .reflection-buildingsMidBack {
+            background-image: url('mid.png');
+            background-size: 450vh 80%;
+            background-repeat: repeat-x;
+            height: 100vh;
+            animation: scrollMidBack 90s linear infinite;
+        }
+
+        .reflection-buildingsFront {
+            background-image: url('front.png');
+            background-size: 200vh 100%;
+            background-repeat: repeat-x;
+            height: 100vh;
+            animation: scrollMid 30s linear infinite;
+        }
+
+        .reflection-car-container {
+            position: absolute;
+            bottom: 0; left: 0; width: 100%; height: 12vh;
+            z-index: 3;
+            overflow: hidden;
+        }
+
+        .reflection-car {
+            position: absolute;
+            top: 0;
+            left: 8vw;
+            width: 300px;
+            transform: scaleY(-1);
+            transform-origin: top;
+            filter: blur(1.5px) opacity(0.3);
+        }
+
+        .BackgroundAnimation_car__Vflzh {
+            position: absolute;
+            bottom: 3vh; 
+            left: 8vw;
+            z-index: 5;
+            width: 300px;
+            filter: blur(0.5px);
+        }
+        
+        .BackgroundAnimation_car__Vflzh img { 
+            width: 100%; height: auto; 
+            filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.8)); 
+        }
+
+        .BackgroundAnimation_frontLayer {
+            position: absolute; 
+            bottom: -20vh;
+            left: 0; 
+            width: 120%; 
+            height: 85vh;
+            background-image: url('shadow.svg');
+            background-size: 150vh 150%;
+            background-repeat: repeat-x;
+            z-index: 6; 
+            filter: brightness(0.1) contrast(1.5) blur(1.5px); 
+            animation: scrollFront 2.5s linear infinite;
+        }
+
+        .Home_logoContainer__-IDzw {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .Home_TFLogo__7Wq7n { 
+            max-width: 550px; 
+            width: 80vw; 
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.8)); 
+        }
+
+        /* =========================================
+           Video Overlay 
+           ========================================= */
+        .video-overlay {
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Reduced darkness from 0.95 to 0.5 and added a blur so the background is visible */
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            overflow-y: auto; 
+        }
+
+        .video-overlay::-webkit-scrollbar {
+            width: 8px;
+        }
+        .video-overlay::-webkit-scrollbar-thumb {
+            background-color: #00d2ff;
+            border-radius: 10px;
+        }
+
+        .videos-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 90%;
+            max-width: 960px;
+            padding: 80px 0; 
+            align-items: center;
+        }
+
+        /* Glassmorphism styles for the Video Box */
+        .video-box {
+            /* Reduced darkness and added blur for a glass effect */
+            background: rgba(15, 15, 30, 0.3);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-title {
+            color: #fff;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0 0 15px 0;
+            text-align: center;
+            text-shadow: 0 0 8px rgba(0, 210, 255, 0.8);
+            border-bottom: 1px solid rgba(0, 210, 255, 0.3);
+            padding-bottom: 8px;
+            width: 100%;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/3; 
+            flex-shrink: 0; 
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent placeholder */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* =========================================
+           About Us Overlay
+           ========================================= */
+        .about-overlay {
+            display: none; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('back.jpeg');
+            background-size: cover;
+            background-position: center;
+            z-index: 1000;
+            overflow-y: hidden;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+            box-sizing: border-box;
+        }
+
+        .about-container {
+            position: relative;
+            width: 90%;
+            max-width: 1300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .about-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section-title {
+            color: #fff;
+            font-size: 1.5rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin: 0 0 15px 0;
+            text-shadow: 0 0 10px rgba(0, 210, 255, 0.8);
+            border-bottom: 2px solid #00d2ff;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        .cards-wrapper {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .card {
+            width: 180px; 
+            height: 260px; 
+            position: relative;
+            background: rgba(20, 20, 45, 0.6); 
+            backdrop-filter: blur(8px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 10px 10px 10px;
+            box-sizing: border-box;
+            clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            padding: 2px; 
+            background: linear-gradient(135deg, #00d2ff 0%, #b721ff 100%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .card h2 { font-size: 0.95rem; margin: 0; letter-spacing: 1px; text-transform: uppercase; text-align: center; }
+        .card h3 { font-size: 0.65rem; color: #d1d1d1; margin: 5px 0 8px 0; font-weight: normal; text-transform: uppercase; text-align: center; }
+        .card-img { width: 100%; height: 110px; object-fit: contain; margin-bottom: auto; z-index: 2; }
+
+        .contact-box {
+            position: relative; width: 100%; padding: 8px; background: rgba(30, 30, 50, 0.4); text-align: center; z-index: 2;
+            clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
+        }
+
+        .contact-box p { margin: 2px 0; font-size: 0.65rem; letter-spacing: 0.5px; color: #e0e0e0; }
+    </style>
+</head>
+<body>
+
+    <div id="root">
+        <nav class="Navbar_navbar__AHaSr">
+            <div class="Navbar_navLinks__pxUEg">
+                <a class="Navbar_link__zGYRb" href="#">HOME</a>
+                <a class="Navbar_link__zGYRb" href="indexkg.html">KG EXAMPLE</a>
+                <a class="Navbar_link__zGYRb" id="resultsTrigger">RESULTS</a>
+                <a class="Navbar_link__zGYRb" id="aboutUsTrigger">ABOUT US</a>
+            </div>
+        </nav>
+
+        <div class="Home_pageWrapper__S6yrl">
+            <div class="Home_logoContainer__-IDzw">
+                <img alt="Techfest Logo" class="Home_TFLogo__7Wq7n" src="logo.png">
+            </div>
+
+            <div class="BackgroundAnimation_scrollingWrapper__l27RC">
+                <div class="BackgroundAnimation_buildingsBack__hP6-g"></div>
+                <div class="BackgroundAnimation_buildingsMidBack"></div>
+                <div class="BackgroundAnimation_buildingsFront__PBtGL"></div>
+
+                <div class="ufo-container">
+                    <img src="ufo.png" alt="UFO">
+                </div>
+
+                <div class="reflection-layer" style="height: 100vh;">
+                    <div class="reflection-buildingsMidBack"></div>
+                    <div class="reflection-buildingsFront"></div>
+                </div>
+                <div class="reflection-car-container">
+                    <div class="reflection-car">
+                        <img alt="car reflection" src="car.png">
+                    </div>
+                </div>
+
+                <div class="vibrant-street"></div>
+
+                <div class="BackgroundAnimation_car__Vflzh">
+                    <img alt="car" src="car.png">
+                </div>
+                <div class="BackgroundAnimation_frontLayer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="videoOverlay" class="video-overlay">
+        <div class="videos-wrapper">
+            
+            <div class="video-box">
+                <h2 class="video-title">Pedestrian Crossing Intent Prediction</h2>
+                <div class="video-container">
+                    <iframe id="videoPlayer1" 
+                        src="" 
+                        title="Pedestrian Crossing Intent Prediction" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <h2 class="video-title">Vehicle Trajectory Prediction : BanglaTesla</h2>
+                <div class="video-container">
+                    <iframe id="videoPlayer2" 
+                        src="" 
+                        title="Vehicle Trajectory Prediction : BanglaTesla" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="aboutUsOverlay" class="about-overlay">
+        <div class="about-container">
+            <div class="about-section">
+                <h1 class="section-title">TEAM INFORMATION</h1>
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <h2>Saif Mohammed</h2>
+                        <h3>Undergrad Student</h3>
+                        <img class="card-img" src="saif3.png" alt="Saif">
+                        <div class="contact-box">
+                            <p>saif.mohammed@northsouth.edu</p>
+                            <p>01770589276</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Nazibul Islam Nabil</h2>
+                        <h3>Undergrad Student</h3>
+                        <img class="card-img" src="nabil3.png" alt="Nabil">
+                        <div class="contact-box">
+                            <p>nazibul.nabil@northsouth.edu</p>
+                            <p>01540401263</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Shadman Khan</h2>
+                        <h3>Undergrad Student</h3>
+                        <img class="card-img" src="shad3.png" alt="Shadman">
+                        <div class="contact-box">
+                            <p>shadman.khan02@northsouth.edu</p>
+                            <p>01688389147</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h2>Humayra Rahman Nipa</h2>
+                        <h3>Undergrad Student</h3>
+                        <img class="card-img" src="nipa3.png" alt="Nipa">
+                        <div class="contact-box">
+                            <p>humayra.nipa@northsouth.edu</p>
+                            <p>01998630209</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="about-section">
+                <h1 class="section-title">SUPERVISOR DETAILS</h1>
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <h2>DR. Mohammad Rashedur Rahman</h2>
+                        <h3>PROJECT SUPERVISOR</h3>
+                        <img class="card-img" src="rrn1.png" alt="Supervisor">
+                        <div class="contact-box">
+                            <p>rashedur.rahman@northsouth.edu</p>
+                            <p>0255668200</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <script>
+        // Element Selectors
+        const resultsBtn = document.getElementById('resultsTrigger');
+        const aboutUsBtn = document.getElementById('aboutUsTrigger');
+        const videoOverlay = document.getElementById('videoOverlay');
+        const aboutUsOverlay = document.getElementById('aboutUsOverlay');
+        
+        // Grab both video players
+        const videoPlayer1 = document.getElementById('videoPlayer1');
+        const videoPlayer2 = document.getElementById('videoPlayer2');
+
+        // YouTube Embed Links with Autoplay
+        const ytLink1 = "https://www.youtube.com/embed/nQoCQZcJHMs?autoplay=1";
+        const ytLink2 = "https://www.youtube.com/embed/a86BA9rI2sQ?autoplay=1";
+
+        // Logic Functions
+        const closeVideo = () => {
+            videoOverlay.style.display = 'none';
+            // Stop both videos when closed
+            videoPlayer1.src = ""; 
+            videoPlayer2.src = ""; 
+        };
+
+        const closeAbout = () => {
+            aboutUsOverlay.style.display = 'none';
+        };
+
+        // --- Video Logic ---
+        resultsBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeAbout(); 
+            videoOverlay.style.display = 'flex';
+            // Start both videos when opened
+            videoPlayer1.src = ytLink1; 
+            videoPlayer2.src = ytLink2; 
+        });
+
+        // Close on background click
+        videoOverlay.addEventListener('click', (e) => {
+            if (e.target === videoOverlay || e.target.classList.contains('videos-wrapper')) {
+                closeVideo();
+            }
+        });
+
+        // --- About Us Logic ---
+        aboutUsBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            closeVideo(); 
+            aboutUsOverlay.style.display = 'flex';
+        });
+
+        aboutUsOverlay.addEventListener('click', (e) => {
+            if (e.target === aboutUsOverlay) closeAbout();
+        });
+
+        // --- Global Escape Key ---
+        document.addEventListener('keydown', (e) => {
+            if (e.key === "Escape") {
+                closeVideo();
+                closeAbout();
+            }
+        });
+    </script>
+</body>
+</html>
