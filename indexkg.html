@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DhakaDrive Knowledge Graph</title>
+    <style>
+      .kg-wrapper {
+        width: 100%;
+        height: 80vh;
+        min-height: 500px;
+        border: 2px solid #eaeaea;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .kg-iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      h2 {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Pedestrian Feature Rules (DhakaDrive)</h2>
+    <p>Interact with the graph below to explore nodes, edges, and rules.</p>
+
+    <div class="kg-wrapper">
+      <iframe
+        class="kg-iframe"
+        src="responsive_kg.html"
+        title="Knowledge Graph Visualization"
+      ></iframe>
+    </div>
+  </body>
+</html>
