@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -271,5 +271,410 @@
       </div>
     </div>
 
+  </body>
+</html> -->
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>About Us - DhakaDriveX</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+    <style type="text/css">
+      /* =========================================
+           Global & Purple Background
+           ========================================= */
+      body, html {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        background-image: linear-gradient(rgba(20, 0, 40, 0.8), rgba(0, 0, 0, 0.9)), url("back2.webp");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff;
+        font-family: "Share Tech Mono", monospace;
+      }
+
+      /* =========================================
+           Navbar (Original Cyan Hover)
+           ========================================= */
+      .Navbar_navbar__AHaSr {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 40px;
+        z-index: 2000;
+        box-sizing: border-box;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+      }
+
+      .Navbar_navLinks__pxUEg {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .Navbar_link__zGYRb {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        transition: color 0.3s;
+        cursor: pointer;
+        padding: 10px 0;
+      }
+
+      .Navbar_link__zGYRb:hover {
+        color: #00d2ff; /* Reverted to Original Cyan */
+      }
+
+      /* Dropdown Styles */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background: rgba(15, 15, 30, 0.9);
+        backdrop-filter: blur(8px);
+        min-width: 180px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+        z-index: 2001;
+        border: 1px solid rgba(0, 210, 255, 0.3);
+        border-radius: 4px;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: flex;
+      }
+
+      .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        transition: background 0.3s, color 0.3s;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .dropdown-content a:hover {
+        background-color: rgba(0, 210, 255, 0.2);
+        color: #00d2ff; /* Reverted to Original Cyan */
+      }
+
+      /* =========================================
+           Mobile Responsiveness Additions for Nav
+           ========================================= */
+
+      /* Active Class Support for Tap Dropdown */
+      .dropdown.active .dropdown-content {
+        display: flex;
+      }
+
+      /* Hamburger Base Styling */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 2005;
+      }
+      .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+
+      /* Hamburger Open Animation */
+      .hamburger.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      /* Media Query for Mobile Phones */
+      @media (max-width: 768px) {
+        .Navbar_navbar__AHaSr {
+          justify-content: flex-end;
+          padding: 20px;
+          background: transparent !important;
+        }
+
+        .hamburger {
+          display: flex;
+        }
+        
+        .Navbar_navLinks__pxUEg {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 280px;
+          height: 100vh;
+          background-color: rgba(20, 10, 40, 0.95); /* Adjusted to match purple theme */
+          backdrop-filter: blur(10px);
+          flex-direction: column;
+          justify-content: center;
+          transition: right 0.4s ease;
+          z-index: 2002;
+          box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+        }
+
+        .Navbar_navLinks__pxUEg.active {
+          right: 0;
+        }
+
+        .dropdown-content {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
+          width: 100%;
+          box-shadow: none;
+          border: none;
+          background: transparent;
+          margin-top: 10px;
+        }
+
+        .dropdown {
+          text-align: center;
+        }
+        
+        .Navbar_link__zGYRb {
+          font-size: 1rem; /* Keeping font consistent for sidebar */
+        }
+      }
+
+      /* =========================================
+           Content & Purple Cards
+           ========================================= */
+      .content-wrapper {
+        margin-top: 100px;
+        padding: 40px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+        color: #a855f7; 
+        text-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+        margin-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+        max-width: 1400px;
+      }
+
+      .card {
+        background: rgba(20, 10, 40, 0.7); 
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(168, 85, 247, 0.3);
+        border-radius: 8px;
+        padding: 30px 15px;
+        flex: 1; 
+        min-width: 250px;
+        max-width: 300px;
+        text-align: center;
+        transition: transform 0.3s ease, border-color 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        border-color: #a855f7;
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.3);
+      }
+
+      .card-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #a855f7;
+        margin-bottom: 20px;
+      }
+
+      .card h2 { font-size: 1.1rem; margin-bottom: 5px; }
+      .card h3 { font-size: 0.8rem; color: #a855f7; margin-bottom: 15px; }
+
+      .contact-box p {
+        font-size: 0.75rem;
+        margin: 5px 0;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .supervisor-section {
+        margin-top: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+      }
+
+      /* Responsiveness for Content */
+      @media (max-width: 1100px) {
+        .card { flex: 0 1 calc(45% - 25px); }
+      }
+      @media (max-width: 650px) {
+        .card { flex: 0 1 100%; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="Navbar_navbar__AHaSr">
+      <!-- Added Hamburger Element -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="Navbar_navLinks__pxUEg">
+        <a class="Navbar_link__zGYRb" href="index.html">HOME</a>
+        <a class="Navbar_link__zGYRb" href="indexkg.html">KG EXAMPLE</a>
+
+        <div class="dropdown">
+          <!-- Added id="dropdownTriggerSpan" here -->
+          <span class="Navbar_link__zGYRb" id="dropdownTriggerSpan">RESULTS</span>
+          <div class="dropdown-content">
+            <a href="index.html">DhakaDriveX</a>
+            <a href="index.html">JAAD and PSI</a>
+          </div>
+        </div>
+
+        <a class="Navbar_link__zGYRb" href="about.html" style="color: #a855f7;">ABOUT US</a>
+      </div>
+    </nav>
+
+    <div class="content-wrapper">
+      <h1 class="section-title">TEAM INFORMATION</h1>
+      
+      <div class="cards-wrapper">
+        <div class="card">
+          <img class="card-img" src="saif3.webp" alt="Saif" />
+          <h2>Saif Mohammed</h2>
+          <h3>Undergrad Student</h3>
+          <div class="contact-box">
+            <p>saif.mohammed@northsouth.edu</p>
+            <p>01770589276</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="nabil3.webp" alt="Nabil" />
+          <h2>Nazibul Islam Nabil</h2>
+          <h3>Undergrad Student</h3>
+          <div class="contact-box">
+            <p>nazibul.nabil@northsouth.edu</p>
+            <p>01961784998</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="shad3.webp" alt="Shadman" />
+          <h2>Shadman Khan</h2>
+          <h3>Undergrad Student</h3>
+          <div class="contact-box">
+            <p>shadman.khan02@northsouth.edu</p>
+            <p>01688389147</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="nipa3.webp" alt="Nipa" />
+          <h2>Humayra Rahman Nipa</h2>
+          <h3>Undergrad Student</h3>
+          <div class="contact-box">
+            <p>humayra.nipa@northsouth.edu</p>
+            <p>01998630209</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="supervisor-section">
+        <h1 class="section-title">SUPERVISOR DETAILS</h1>
+        <div class="card">
+          <img class="card-img" src="rrn1.png" alt="Supervisor" />
+          <h2>DR. Mohammad R. Rahman</h2>
+          <h3>PROJECT SUPERVISOR</h3>
+          <div class="contact-box">
+            <p>rashedur.rahman@northsouth.edu</p>
+            <p>0255668200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Added Javascript for Mobile Navbar Toggle -->
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.querySelector('.Navbar_navLinks__pxUEg');
+      const dropdownSpan = document.getElementById('dropdownTriggerSpan');
+      const dropdown = document.querySelector('.dropdown');
+
+      // Hamburger Click Logic
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+      });
+
+      // Dropdown Tap Logic for Mobile
+      dropdownSpan.addEventListener('click', (e) => {
+        // Prevent default navigation if needed and toggle dropdown
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      });
+
+      // Auto-close mobile menu when an item is clicked
+      const allNavLinks = document.querySelectorAll('.Navbar_link__zGYRb, .dropdown-content a');
+      allNavLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          // If the clicked link is the dropdown trigger, don't close the menu
+          if(e.target.id === "dropdownTriggerSpan") return;
+          
+          navLinks.classList.remove('active');
+          hamburger.classList.remove('open');
+          dropdown.classList.remove('active');
+        });
+      });
+    </script>
   </body>
 </html>
