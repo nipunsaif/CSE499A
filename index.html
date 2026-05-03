@@ -203,60 +203,29 @@
       }
 
       .BackgroundAnimation_buildingsMidBack {
-        /* position: absolute; top: 0; left: 0; width: 180%; height: 100%;
-            background-image: url('mid.png');
-            background-size: 250vh 80%;
-            background-repeat: repeat-x;
-            background-position-y: bottom;
-            z-index: 2;
-            animation: scrollMidBack 90s linear infinite; 
-            filter: blur(1.5px); */
-
-        /* 
-          position: absolute; top: 0; left: 0; width: 80%; height: 100%;
-            background-image: url('mid.png');
-            background-size: 350vh 80%;
-            background-repeat: repeat-x;
-            background-position-y: bottom;
-            z-index: 2;
-            animation: scrollMid 90s linear infinite;
-            filter: blur(1.5px) */
-
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%; /* Changed from 80% so it touches the right edge of the screen */
+        width: 100%; 
         height: 100%;
         background-image: url("mid.png");
-        background-size: 250vh 70%; /* Changed from 80% so it doesn't start vertically lowered (change back to 80% if you intentionally want sky space above the buildings) */
+        background-size: 250vh 70%; 
         background-repeat: repeat-x;
         background-position-y: bottom;
         z-index: 2;
         animation: scrollMid 90s linear infinite;
-        /* filter: blur(1.5px); */
       }
-
-      /* my update */
 
       @keyframes scrollMid2 {
         from {
           background-position-x: 0px;
         }
         to {
-          /* This exactly matches your 250vh background-size */
-          background-position-x: -250vh;
+          background-position-x: -250vh; 
         }
       }
 
       .BackgroundAnimation_buildingsFront__PBtGL {
-        /* position: absolute; bottom: 12vh; left: 0; width: 150%; height: 60vh;
-            background-image: url('front.png');
-            background-size: 200vh 100%;
-            background-repeat: repeat-x;
-            background-position-y: bottom;
-            z-index: 3;
-            animation: scrollMid 10s linear infinite; */
-
         position: absolute;
         bottom: 12vh;
         left: 0;
@@ -266,7 +235,7 @@
         background-size: 250vh 100%;
         background-repeat: repeat-x;
         background-position-y: bottom;
-        z-index: 3;
+        z-index: 3; 
         animation: scrollMid2 30s linear infinite;
       }
 
@@ -330,7 +299,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 20vh;
+        height: 12vh;
         z-index: 3;
         overflow: hidden;
       }
@@ -350,7 +319,7 @@
         bottom: 3vh;
         left: 8vw;
         z-index: 5;
-        width: 300px;
+        width: 220px;
         filter: blur(0.5px);
       }
 
@@ -360,43 +329,19 @@
         filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
       }
 
-      /* .BackgroundAnimation_frontLayer {
-        position: absolute;
-        bottom: -100px;
-        left: 0;
-        width: 120%;
-        height: 300px;
-        background-image: url("shadow.svg");
-        background-size: 203vh 153%;
-         background-repeat: repeat-x; 
-        z-index: 6;
-        filter: blur(1px);
-        animation: scrollFront 2s linear infinite;
-      } */
-
       .BackgroundAnimation_frontLayer {
-        /* 1. Use a CSS variable so we only have to change the width in one place */
-        --image-width: 1500px;
-
+        --image-width: 1500px; 
         position: absolute;
         bottom: -170px;
         left: 0;
-
-        /* 2. Make the container wide enough to hold the screen + one extra image */
-        width: calc(100vw + var(--image-width));
+        width: calc(100vw + var(--image-width)); 
         height: 300px;
-
         background-image: url("shadow.svg");
-
-        /* 3. The image now stays at 1500px regardless of window size */
-        background-size: var(--image-width) 100%;
+        background-size: var(--image-width) 100%; 
         background-repeat: repeat-x;
-
         z-index: 6;
         filter: blur(1px);
         will-change: transform;
-
-        /* 4. Keep your preferred speed */
         animation: scrollFront 2s linear infinite;
       }
 
@@ -405,7 +350,6 @@
           transform: translate3d(0, 0, 0);
         }
         to {
-          /* 5. Move by exactly one image width for a perfect, jump-free loop */
           transform: translate3d(calc(var(--image-width) * -1), 0, 0);
         }
       }
@@ -507,17 +451,138 @@
         height: 100%;
         border: none;
       }
+
+      /* =========================================
+           Mobile Responsiveness Additions
+           ========================================= */
+
+      /* Make Nav Bar Background Transparent */
+      .Navbar_navbar__AHaSr {
+        background: transparent !important;
+      }
+
+      /* Active Class Support for Tap Dropdown */
+      .dropdown.active .dropdown-content {
+        display: flex;
+      }
+
+      /* Hamburger Base Styling */
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 2005;
+      }
+      .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+      }
+
+      /* Hamburger Open Animation */
+      .hamburger.open span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .hamburger.open span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      /* Media Query for Mobile Phones */
+      @media (max-width: 768px) {
+        .Navbar_navbar__AHaSr {
+          justify-content: flex-end;
+          padding: 20px;
+        }
+
+        .hamburger {
+          display: flex;
+        }
+        
+        .Navbar_navLinks__pxUEg {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 280px;
+          height: 100vh;
+          background-color: rgba(10, 10, 20, 0.95);
+          backdrop-filter: blur(10px);
+          flex-direction: column;
+          justify-content: center;
+          transition: right 0.4s ease;
+          z-index: 2002;
+          box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+        }
+
+        .Navbar_navLinks__pxUEg.active {
+          right: 0;
+        }
+
+        .dropdown-content {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
+          width: 100%;
+          box-shadow: none;
+          border: none;
+          background: transparent;
+          margin-top: 10px;
+        }
+
+        .dropdown {
+          text-align: center;
+        }
+
+        .Home_TFLogo__7Wq7n {
+          max-width: 90vw;
+          top: 30px; 
+          position: relative;
+        }
+
+        .Home_logoContainer__-IDzw {
+          top: 60px;
+        }
+
+        .videos-wrapper {
+          padding: 80px 0 40px 0;
+          width: 95%;
+        }
+
+        .video-title {
+          font-size: 1.1rem;
+        }
+
+        .BackgroundAnimation_car__Vflzh {
+          width: 160px; 
+        }
+        
+        .reflection-car {
+          width: 160px;
+        }
+      }
     </style>
   </head>
   <body>
     <div id="root">
       <nav class="Navbar_navbar__AHaSr">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         <div class="Navbar_navLinks__pxUEg">
-          <a class="Navbar_link__zGYRb" href="#">HOME</a>
+          <a class="Navbar_link__zGYRb" href="index.html">HOME</a>
           <a class="Navbar_link__zGYRb" href="indexkg.html">KG EXAMPLE</a>
 
           <div class="dropdown">
-            <span class="Navbar_link__zGYRb">RESULTS</span>
+            <span class="Navbar_link__zGYRb" id="dropdownTriggerSpan">RESULTS</span>
             <div class="dropdown-content">
               <a id="dhakadrivexTrigger">DhakaDriveX</a>
               <a id="jaadTrigger">JAAD and PSI</a>
@@ -719,6 +784,39 @@
     </div>
 
     <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.querySelector('.Navbar_navLinks__pxUEg');
+      const dropdownSpan = document.getElementById('dropdownTriggerSpan');
+      const dropdown = document.querySelector('.dropdown');
+
+      // Hamburger Click Logic
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('open');
+      });
+
+      // Dropdown Tap Logic for Mobile
+      dropdownSpan.addEventListener('click', (e) => {
+        // Prevent default navigation if needed and toggle dropdown
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      });
+
+      // Auto-close mobile menu when an item is clicked
+      const allNavLinks = document.querySelectorAll('.Navbar_link__zGYRb, .dropdown-content a');
+      allNavLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          // If the clicked link is the dropdown trigger, don't close the menu
+          if(e.target.id === "dropdownTriggerSpan") return;
+          
+          navLinks.classList.remove('active');
+          hamburger.classList.remove('open');
+          dropdown.classList.remove('active');
+        });
+      });
+    </script>
+
+    <script>
       // Element Selectors
       const dhakadrivexTrigger = document.getElementById("dhakadrivexTrigger");
       const jaadTrigger = document.getElementById("jaadTrigger");
@@ -744,7 +842,9 @@
       const closeAllOverlays = () => {
         dhakadrivexOverlay.style.display = "none";
         jaadOverlay.style.display = "none";
-        aboutUsOverlay.style.display = "none";
+        
+        // Safety check added purely to prevent breaking if your aboutUs element isn't found
+        if(aboutUsOverlay) aboutUsOverlay.style.display = "none";
 
         // Stop all videos
         videoPlayer1.src = "";
@@ -791,15 +891,19 @@
       });
 
       // --- About Us Logic ---
-      aboutUsBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        closeAllOverlays();
-        aboutUsOverlay.style.display = "flex";
-      });
+      if(aboutUsBtn) { // Added an existence check to ensure the script doesn't error out
+        aboutUsBtn.addEventListener("click", (e) => {
+          e.preventDefault();
+          closeAllOverlays();
+          aboutUsOverlay.style.display = "flex";
+        });
+      }
 
-      aboutUsOverlay.addEventListener("click", (e) => {
-        if (e.target === aboutUsOverlay) closeAllOverlays();
-      });
+      if(aboutUsOverlay) { // Added existence check
+        aboutUsOverlay.addEventListener("click", (e) => {
+          if (e.target === aboutUsOverlay) closeAllOverlays();
+        });
+      }
 
       // --- Global Escape Key ---
       document.addEventListener("keydown", (e) => {
