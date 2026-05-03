@@ -17,8 +17,8 @@
 
     <style type="text/css">
       /* =========================================
-           Global & Reset
-           ========================================= */
+            Global & Reset
+            ========================================= */
       body,
       html {
         margin: 0;
@@ -30,8 +30,8 @@
       }
 
       /* =========================================
-           Top Navbar & Dropdown
-           ========================================= */
+            Top Navbar & Dropdown
+            ========================================= */
       .Navbar_navbar__AHaSr {
         position: fixed;
         top: 0;
@@ -84,7 +84,7 @@
         top: 100%;
         left: 50%;
         transform: translateX(-50%);
-        margin-top: -5px; /* Pull it slightly up to connect to hover area */
+        margin-top: -5px; 
         flex-direction: column;
       }
 
@@ -117,8 +117,8 @@
       }
 
       /* =========================================
-           UFO Styles
-           ========================================= */
+            UFO Styles
+            ========================================= */
       .ufo-container {
         position: absolute;
         z-index: 2;
@@ -144,8 +144,8 @@
       }
 
       /* =========================================
-           Main Parallax Environment
-           ========================================= */
+            Main Parallax Environment
+            ========================================= */
       .Home_pageWrapper__S6yrl {
         position: relative;
         width: 100vw;
@@ -178,15 +178,6 @@
         }
         to {
           background-position-x: -250vh;
-        }
-      }
-
-      @keyframes scrollFront {
-        from {
-          background-position-x: 0px;
-        }
-        to {
-          background-position-x: -150vh;
         }
       }
 
@@ -329,12 +320,13 @@
         filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.8));
       }
 
+      /* Fixed shadow layer */
       .BackgroundAnimation_frontLayer {
         --image-width: 1500px; 
         position: absolute;
         bottom: -170px;
         left: 0;
-        width: calc(100vw + var(--image-width)); 
+        width: calc(100vw + (var(--image-width) * 2)); 
         height: 300px;
         background-image: url("shadow.svg");
         background-size: var(--image-width) 100%; 
@@ -342,10 +334,10 @@
         z-index: 6;
         filter: blur(1px);
         will-change: transform;
-        animation: scrollFront 2s linear infinite;
+        animation: scrollShadowAnim 2s linear infinite;
       }
 
-      @keyframes scrollFront {
+      @keyframes scrollShadowAnim {
         from {
           transform: translate3d(0, 0, 0);
         }
@@ -372,8 +364,8 @@
       }
 
       /* =========================================
-           Shared Video Overlay Styles
-           ========================================= */
+            Shared Video Overlay Styles
+            ========================================= */
       .video-overlay {
         display: none;
         position: fixed;
@@ -390,10 +382,12 @@
         overflow-y: auto;
       }
 
-      .video-overlay::-webkit-scrollbar {
+      .video-overlay::-webkit-scrollbar,
+      .about-overlay::-webkit-scrollbar {
         width: 8px;
       }
-      .video-overlay::-webkit-scrollbar-thumb {
+      .video-overlay::-webkit-scrollbar-thumb,
+      .about-overlay::-webkit-scrollbar-thumb {
         background-color: #00d2ff;
         border-radius: 10px;
       }
@@ -453,8 +447,105 @@
       }
 
       /* =========================================
-           Mobile Responsiveness Additions
-           ========================================= */
+            About Us Overlay (ADDED)
+            ========================================= */
+      .about-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(8px);
+        z-index: 1000;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        overflow-y: auto;
+      }
+
+      .about-container {
+        background: rgba(15, 15, 30, 0.85);
+        border: 1px solid rgba(0, 210, 255, 0.3);
+        border-radius: 8px;
+        padding: 40px;
+        width: 90%;
+        max-width: 1000px;
+        margin: 80px auto;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+      }
+
+      .about-section {
+        margin-bottom: 40px;
+      }
+      .about-section:last-child {
+        margin-bottom: 0;
+      }
+
+      .section-title {
+        color: #fff;
+        text-align: center;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        text-shadow: 0 0 8px rgba(0, 210, 255, 0.8);
+        border-bottom: 1px solid rgba(0, 210, 255, 0.3);
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+      }
+
+      .cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+      }
+
+      .card {
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s, border-color 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(0, 210, 255, 0.6);
+      }
+
+      .card-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 2px solid #00d2ff;
+      }
+
+      .card h2 {
+        font-size: 1.1rem;
+        margin: 0 0 5px 0;
+        color: #fff;
+      }
+
+      .card h3 {
+        font-size: 0.9rem;
+        color: #00d2ff;
+        margin: 0 0 15px 0;
+      }
+
+      .contact-box p {
+        margin: 5px 0;
+        font-size: 0.8rem;
+        color: #ccc;
+        word-wrap: break-word;
+      }
+
+      /* =========================================
+            Mobile Responsiveness Additions
+            ========================================= */
 
       /* Make Nav Bar Background Transparent */
       .Navbar_navbar__AHaSr {
@@ -559,11 +650,21 @@
         }
 
         .BackgroundAnimation_car__Vflzh {
-          width: 160px; 
+          width: 220px; /* Increased from 160px */
         }
         
         .reflection-car {
-          width: 160px;
+          width: 220px; /* Increased from 160px */
+        }
+
+        /* Mobile specific About-Us adjustments */
+        .about-container {
+          padding: 20px;
+          margin: 60px auto 40px auto;
+        }
+        .card {
+          width: 100%;
+          max-width: 300px;
         }
       }
     </style>
@@ -901,7 +1002,9 @@
 
       if(aboutUsOverlay) { // Added existence check
         aboutUsOverlay.addEventListener("click", (e) => {
-          if (e.target === aboutUsOverlay) closeAllOverlays();
+          if (e.target === aboutUsOverlay || e.target.classList.contains("about-container")) {
+             closeAllOverlays();
+          }
         });
       }
 
